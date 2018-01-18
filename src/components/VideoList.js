@@ -1,14 +1,11 @@
 import React from 'react'
-import { Embed } from 'semantic-ui-react'
+import { Embed, Container } from 'semantic-ui-react'
 
 const VideoList = () => (
-  <div>
   <Embed
-    id='O6Xo21L0ybE'
-    placeholder='/assets/images/image-16by9.png'
+    id='M5Np7xguHz4'
     source='youtube'
   />
-  </div>
 )
 
 export default VideoList

@@ -1,0 +1,18 @@
+.pushable {
+  height: 100vh;
+}
+
+.pusher {
+  height: 100%;
+}
+
+.ui.basic.segment {
+  height: 100%;
+}
+
+.ui.embed {
+  height: 100%;
+  width: auto;
+  max-width: 89.5%;
+  padding-bottom: 0px;
+}

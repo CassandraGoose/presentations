@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { Link, Route, Switch } from 'react-router-dom'
-import { Sidebar, Segment, Menu, Image, Icon, Header } from 'semantic-ui-react'
+import { Sidebar, Segment, Menu, Image, Icon, Header, Container } from 'semantic-ui-react'
 import VideoList from './VideoList'
 import Splash from './Splash'
 

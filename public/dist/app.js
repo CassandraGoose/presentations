@@ -17529,37 +17529,7 @@ if(false) {
 }
 
 /***/ }),
-/* 298 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(354);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {"hmr":true}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(295)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!./main.css", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!./main.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
+/* 298 */,
 /* 299 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -17573,15 +17543,10 @@ if(false) {
 
 
 var VideoList = function VideoList() {
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    'div',
-    null,
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_modules_Embed_Embed___default.a, {
-      id: 'O6Xo21L0ybE',
-      placeholder: '/assets/images/image-16by9.png',
-      source: 'youtube'
-    })
-  );
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_modules_Embed_Embed___default.a, {
+    id: 'M5Np7xguHz4',
+    source: 'youtube'
+  });
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (VideoList);
@@ -17599,8 +17564,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_LeftMenu__ = __webpack_require__(296);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_semantic_ui_css_semantic_min_css__ = __webpack_require__(297);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_semantic_ui_css_semantic_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_css_semantic_min_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__public_main_css__ = __webpack_require__(298);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__public_main_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__public_main_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__main_css__ = __webpack_require__(733);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__main_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__main_css__);
 
 
 
@@ -19541,20 +19506,7 @@ exports.push([module.i, " /*\n * # Semantic UI - 2.2.12\n * https://github.com/S
 
 
 /***/ }),
-/* 354 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(194)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".pushable {\n  height: 100vh;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 354 */,
 /* 355 */
 /***/ (function(module, exports) {
 
@@ -46126,6 +46078,52 @@ function pathToRegexp (path, keys, options) {
 
   return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)
 }
+
+
+/***/ }),
+/* 732 */,
+/* 733 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(734);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(295)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../node_modules/css-loader/index.js!./main.css", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!./main.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 734 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(194)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".pushable {\n  height: 100vh;\n}\n\n.pusher {\n  height: 100%;\n}\n\n.ui.basic.segment {\n  height: 100%;\n}\n\n.ui.embed {\n  height: 100%;\n  width: auto;\n  max-width: 89.5%;\n  padding-bottom: 0px;\n}\n", ""]);
+
+// exports
 
 
 /***/ })
