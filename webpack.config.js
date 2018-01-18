@@ -51,7 +51,7 @@ const webpackConfig = {
 
   output: {
     filename: '[name].js',
-    path: path.resolve('public/dist'),
+    path: path.resolve('public'),
     publicPath: '/',
   },
 

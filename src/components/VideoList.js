@@ -5,8 +5,8 @@ const VideoList = (props) => {
   return (
     <Embed
     id={props.match.params.id}
+    icon='play'
     source='youtube'
-    icon='rocket'
   />
   )
 }

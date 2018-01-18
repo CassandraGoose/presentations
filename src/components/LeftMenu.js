@@ -4,6 +4,7 @@ import { Link, Route, Switch } from 'react-router-dom'
 import { Sidebar, Segment, Menu, Image, Icon, Header, Container } from 'semantic-ui-react'
 import VideoList from './VideoList'
 import Splash from './Splash'
+import ComingSoon from './ComingSoon'
 
 class LeftMenu extends Component {
   state = { visible: true }
@@ -17,6 +18,7 @@ class LeftMenu extends Component {
         <Sidebar.Pushable>
           <Sidebar as={Menu} animation='slide along' width='thin' visible={visible} icon='labeled' vertical inverted>
             <Menu.Item name='home'>
+            <Icon name="home"/>
               <Link to="/landing">Home</Link>
             </Menu.Item>
             <Menu.Item name='video1'>
@@ -41,16 +43,20 @@ class LeftMenu extends Component {
               <Link to="/video/wQsYZyzkpLM">Intro to HTML Forms</Link>
             </Menu.Item>
             <Menu.Item name='video8'>
-              <Link to="/video/ATXiCaa0R-c">DOM & jQuery Breakout</Link>
+              <Link to="/video/-qZumxVyKlU">Taste of es2015</Link>
             </Menu.Item>
             <Menu.Item name='video9'>
-              <Link to="/video/-qZumxVyKlU">Overview of es2015 Breakout</Link>
+              <Link to="/video/ATXiCaa0R-c">DOM & jQuery Breakout</Link>
+            </Menu.Item>
+            <Menu.Item name='video10'>
+              <Link to="/coming-soon">DVLP DNVR Lightning Talk</Link>
             </Menu.Item>
           </Sidebar>
           <Sidebar.Pusher>
             <Segment basic>
             <Route path="/landing" component={Splash}/>
             <Route path="/video/:id" component={VideoList}/>
+            <Route path="/coming-soon" component={ComingSoon}/>
             </Segment>
           </Sidebar.Pusher>
         </Sidebar.Pushable>
