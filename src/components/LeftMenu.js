@@ -5,6 +5,7 @@ import { Sidebar, Segment, Menu, Image, Icon, Header, Container } from 'semantic
 import VideoList from './VideoList'
 import Splash from './Splash'
 import ComingSoon from './ComingSoon'
+import NotFound from './NotFound'
 
 class LeftMenu extends Component {
 
@@ -55,11 +56,11 @@ class LeftMenu extends Component {
           <Sidebar as={Menu} animation='slide along' width='thin' visible={visible} icon='labeled' vertical inverted>
             <Menu.Item name='home'>
             <Icon name="home"/>
-              <Link to="/landing">Home</Link>
+              <Link to="/home">Home</Link>
             </Menu.Item>
             {this.state.videos.map(function(item, i) {
               return (<Menu.Item key={i} name={item.title}>
-                <Link to={`/videos/${item.id}`}>{item.title}</Link>
+                <Link to={`/video/${item.id}`}>{item.title}</Link>
               </Menu.Item>)
             })}
             <Menu.Item name='video10'>
@@ -68,9 +69,12 @@ class LeftMenu extends Component {
           </Sidebar>
           <Sidebar.Pusher>
             <Segment basic>
-            <Route path="/landing" component={Splash}/>
-            <Route path="/video/:id" component={VideoList}/>
-            <Route path="/coming-soon" component={ComingSoon}/>
+              <Switch>
+                <Route path="/home" component={Splash}/>
+                <Route path="/video/:id" component={VideoList}/>
+                <Route path="/coming-soon" component={ComingSoon}/>
+                <Route path='*' component={NotFound}/>
+              </Switch>
             </Segment>
           </Sidebar.Pusher>
         </Sidebar.Pushable>
