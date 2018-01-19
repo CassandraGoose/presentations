@@ -3,10 +3,7 @@ import { Statistic } from 'semantic-ui-react'
 
 
 const Splash = () => (
-
-
-  
-  <div>
+  <div className="holdMe">
     <Statistic floated="left" className="marginAbove">
       <Statistic.Value>Teaching and Presentation Portfolio</Statistic.Value>
     </Statistic>

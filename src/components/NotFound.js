@@ -1,18 +1,11 @@
 import React from 'react'
-import { Statistic } from 'semantic-ui-react'
-
-function mouseMover(e) {
-  console.log('moving')
-}
-
-function enterTheScreen(e) {
-  console.log('here')
-}
+import { Image } from 'semantic-ui-react'
 
 const NotFound = () => (
-    <div>
-      <p>not found</p>
-    </div>
+  <div>
+    <h3>NOT FOUND</h3>
+    <Image src='https://media.giphy.com/media/2Hu0PKkZTtyaA/giphy.gif' fluid />
+  </div>
 )
 
 export default NotFound
