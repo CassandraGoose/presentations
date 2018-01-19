@@ -19039,20 +19039,11 @@ var Splash = function Splash() {
 
 
 var VideoList = function VideoList(props) {
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    'div',
-    null,
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      'p',
-      null,
-      'video list'
-    ),
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_modules_Embed_Embed___default.a, {
-      id: props.match.params.id,
-      icon: 'play',
-      source: 'youtube'
-    })
-  );
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_modules_Embed_Embed___default.a, {
+    id: props.match.params.id,
+    icon: 'play',
+    source: 'youtube'
+  });
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (VideoList);
