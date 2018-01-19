@@ -58,7 +58,6 @@ class LeftMenu extends Component {
               <Link to="/landing">Home</Link>
             </Menu.Item>
             {this.state.videos.map(function(item, i) {
-              {console.log(item.id)}
               return (<Menu.Item key={i} name={item.title}>
                 <Link to={`/videos/${item.id}`}>{item.title}</Link>
               </Menu.Item>)

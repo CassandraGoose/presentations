@@ -1,10 +1,11 @@
 import React from 'react'
 import { Embed, Container } from 'semantic-ui-react'
 
-const VideoList = (props) => {
+const VideoList = () => {
+console.log('things')
   return (
     <Embed
-    id={props.match.params.id}
+    id='7hQFekVVaGk'
     icon='play'
     source='youtube'
   />

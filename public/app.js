@@ -18801,9 +18801,6 @@ var LeftMenu = function (_Component) {
               )
             ),
             this.state.videos.map(function (item, i) {
-              {
-                console.log(item.id);
-              }
               return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
                 { key: i, name: item.title },
@@ -19010,9 +19007,10 @@ var Splash = function Splash() {
 
 
 
-var VideoList = function VideoList(props) {
+var VideoList = function VideoList() {
+  console.log('things');
   return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_modules_Embed_Embed___default.a, {
-    id: props.match.params.id,
+    id: '7hQFekVVaGk',
     icon: 'play',
     source: 'youtube'
   });
