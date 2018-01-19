@@ -3,10 +3,14 @@ import { Statistic } from 'semantic-ui-react'
 
 
 const Splash = () => (
-  <Statistic>
-    <Statistic.Value>my name is cassanra and here is the thing</Statistic.Value>
-    <Statistic.Label>here is a littler thing</Statistic.Label>
-  </Statistic>
+  <div>
+    <Statistic floated="left" className="marginAbove">
+      <Statistic.Value>Teaching and Presentation Portfolio</Statistic.Value>
+    </Statistic>
+    <Statistic floated="left" size="tiny">
+      <Statistic.Value>Cassandra Torske | 2016 - Current</Statistic.Value>
+    </Statistic>
+  </div>
 )
 
 export default Splash

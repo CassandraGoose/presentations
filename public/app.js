@@ -18734,20 +18734,46 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var LeftMenu = function (_Component) {
   _inherits(LeftMenu, _Component);
 
-  function LeftMenu() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
+  function LeftMenu(props) {
     _classCallCheck(this, LeftMenu);
 
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
+    var _this = _possibleConstructorReturn(this, (LeftMenu.__proto__ || Object.getPrototypeOf(LeftMenu)).call(this, props));
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = LeftMenu.__proto__ || Object.getPrototypeOf(LeftMenu)).call.apply(_ref, [this].concat(args))), _this), _this.state = { visible: true }, _this.toggleVisibility = function () {
+    _this.toggleVisibility = function () {
       return _this.setState({ visible: !_this.state.visible });
-    }, _temp), _possibleConstructorReturn(_this, _ret);
+    };
+
+    _this.state = { visible: true,
+      videos: [{
+        title: 'Intro to Sorting',
+        id: 'yNiO2jivXsU'
+      }, {
+        title: 'Intro to Express',
+        id: 'TAaadUhcnOg'
+      }, {
+        title: 'Accumulator Pattern Walkthrough',
+        id: 'jYDldOM4lhM'
+      }, {
+        title: 'Intro to Ajax Walkthrough',
+        id: 'xaOfeVVzPYY'
+      }, {
+        title: 'Intro to SQL',
+        id: 'GDg6alKEnw8'
+      }, {
+        title: 'Validations Breakout',
+        id: 'M5Np7xguHz4'
+      }, {
+        title: 'Intro to HTML Forms',
+        id: 'wQsYZyzkpLM'
+      }, {
+        title: 'Overview of es2015',
+        id: '-qZumxVyKlU'
+      }, {
+        title: 'DOM & jQuery Breakout',
+        id: 'ATXiCaa0R-c'
+      }]
+    };
+    return _this;
   }
 
   _createClass(LeftMenu, [{
@@ -18774,87 +18800,20 @@ var LeftMenu = function (_Component) {
                 'Home'
               )
             ),
-            __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
-              { name: 'video1' },
-              __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
-                { to: '/video/yNiO2jivXsU' },
-                'Intro to Sorting'
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
-              { name: 'video2' },
-              __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
-                { to: '/video/TAaadUhcnOg' },
-                'Intro to Express'
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
-              { name: 'video3' },
-              __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
-                { to: '/video/jYDldOM4lhM' },
-                'The Accumulator Pattern Walkthrough'
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
-              { name: 'video4' },
-              __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
-                { to: '/video/xaOfeVVzPYY' },
-                'Intro to AJAX Walkthrough'
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
-              { name: 'video5' },
-              __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
-                { to: '/video/GDg6alKEnw8' },
-                'Intro to SQL'
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
-              { name: 'video6' },
-              __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
-                { to: '/video/M5Np7xguHz4' },
-                'Validations Overview'
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
-              { name: 'video7' },
-              __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
-                { to: '/video/wQsYZyzkpLM' },
-                'Intro to HTML Forms'
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
-              { name: 'video8' },
-              __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
-                { to: '/video/-qZumxVyKlU' },
-                'Taste of es2015'
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
-              { name: 'video9' },
-              __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
-                { to: '/video/ATXiCaa0R-c' },
-                'DOM & jQuery Breakout'
-              )
-            ),
+            this.state.videos.map(function (item, i) {
+              {
+                console.log(item.id);
+              }
+              return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
+                { key: i, name: item.title },
+                __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
+                  { to: '/videos/' + item.id },
+                  item.title
+                )
+              );
+            }),
             __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
               __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
               { name: 'video10' },
@@ -18973,17 +18932,25 @@ if(false) {
 
 var ComingSoon = function ComingSoon() {
   return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a,
+    'div',
     null,
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a.Value,
-      null,
-      'I am waiting on the DVLP DNVR staff'
+      __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a,
+      { floated: 'left', className: 'marginAbove' },
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a.Value,
+        null,
+        'Coming Soon!'
+      )
     ),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a.Label,
-      null,
-      'to upload the videos from the 2017 DVLP DNVR.'
+      __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a,
+      { floated: 'left', size: 'tiny' },
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a.Value,
+        null,
+        'I will post this as soon as the 2016 DVLP DNVR presentations are posted.'
+      )
     )
   );
 };
@@ -19005,17 +18972,25 @@ var ComingSoon = function ComingSoon() {
 
 var Splash = function Splash() {
   return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a,
+    'div',
     null,
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a.Value,
-      null,
-      'my name is cassanra and here is the thing'
+      __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a,
+      { floated: 'left', className: 'marginAbove' },
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a.Value,
+        null,
+        'Teaching and Presentation Portfolio'
+      )
     ),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a.Label,
-      null,
-      'here is a littler thing'
+      __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a,
+      { floated: 'left', size: 'tiny' },
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_views_Statistic_Statistic___default.a.Value,
+        null,
+        'Cassandra Torske | 2016 - Current'
+      )
     )
   );
 };
@@ -21008,7 +20983,7 @@ exports = module.exports = __webpack_require__(201)(false);
 
 
 // module
-exports.push([module.i, ".pushable {\n  height: 100vh;\n}\n\n.pusher {\n  height: 100%;\n}\n\n.ui.basic.segment {\n  height: 100%;\n}\n\n.ui.embed {\n  height: 100%;\n  width: auto;\n  max-width: 89.5%;\n  padding-bottom: 0px;\n}\n", ""]);
+exports.push([module.i, ".pushable {\n  height: 100vh;\n}\n\n.pusher {\n  height: 100%;\n}\n\n.ui.basic.segment {\n  height: 100%;\n}\n\n.ui.embed {\n  height: 100%;\n  width: auto;\n  max-width: 89.5%;\n  padding-bottom: 0px;\n}\n\n.ui.statistic>.value, .ui.statistics .statistic>.value {\n  text-align: left;\n}\n\n.ui.statistic+.ui.statistic {\n  margin: 0;\n}\n\n.marginAbove {\n  margin-top: 10% !important;\n}\n", ""]);
 
 // exports
 

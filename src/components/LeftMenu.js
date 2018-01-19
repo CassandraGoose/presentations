@@ -7,11 +7,47 @@ import Splash from './Splash'
 import ComingSoon from './ComingSoon'
 
 class LeftMenu extends Component {
-  state = { visible: true }
+
+
+  constructor(props) {
+    super(props)
+
+    this.state = { visible: true,
+    videos: [{
+      title: 'Intro to Sorting',
+      id: 'yNiO2jivXsU'
+    }, {
+      title: 'Intro to Express',
+      id: 'TAaadUhcnOg'
+    }, {
+      title: 'Accumulator Pattern Walkthrough',
+      id: 'jYDldOM4lhM'
+    }, {
+      title: 'Intro to Ajax Walkthrough',
+      id: 'xaOfeVVzPYY'
+    }, {
+      title: 'Intro to SQL',
+      id: 'GDg6alKEnw8'
+    }, {
+      title: 'Validations Breakout',
+      id: 'M5Np7xguHz4'
+    }, {
+      title: 'Intro to HTML Forms',
+      id: 'wQsYZyzkpLM'
+    },{
+      title: 'Overview of es2015',
+      id: '-qZumxVyKlU'
+    },{
+      title: 'DOM & jQuery Breakout',
+      id: 'ATXiCaa0R-c'
+    }]
+  }
+  }
 
   toggleVisibility = () => this.setState({ visible: !this.state.visible })
 
   render() {
+
     const { visible } = this.state
     return (
       <BrowserRouter>
@@ -21,33 +57,12 @@ class LeftMenu extends Component {
             <Icon name="home"/>
               <Link to="/landing">Home</Link>
             </Menu.Item>
-            <Menu.Item name='video1'>
-              <Link to="/video/yNiO2jivXsU">Intro to Sorting</Link>
-            </Menu.Item>
-            <Menu.Item name='video2'>
-              <Link to="/video/TAaadUhcnOg">Intro to Express</Link>
-            </Menu.Item>
-            <Menu.Item name='video3'>
-              <Link to="/video/jYDldOM4lhM">The Accumulator Pattern Walkthrough</Link>
-            </Menu.Item>
-            <Menu.Item name='video4'>
-              <Link to="/video/xaOfeVVzPYY">Intro to AJAX Walkthrough</Link>
-            </Menu.Item>
-            <Menu.Item name='video5'>
-              <Link to="/video/GDg6alKEnw8">Intro to SQL</Link>
-            </Menu.Item>
-            <Menu.Item name='video6'>
-              <Link to="/video/M5Np7xguHz4">Validations Overview</Link>
-            </Menu.Item>
-            <Menu.Item name='video7'>
-              <Link to="/video/wQsYZyzkpLM">Intro to HTML Forms</Link>
-            </Menu.Item>
-            <Menu.Item name='video8'>
-              <Link to="/video/-qZumxVyKlU">Taste of es2015</Link>
-            </Menu.Item>
-            <Menu.Item name='video9'>
-              <Link to="/video/ATXiCaa0R-c">DOM & jQuery Breakout</Link>
-            </Menu.Item>
+            {this.state.videos.map(function(item, i) {
+              {console.log(item.id)}
+              return (<Menu.Item key={i} name={item.title}>
+                <Link to={`/videos/${item.id}`}>{item.title}</Link>
+              </Menu.Item>)
+            })}
             <Menu.Item name='video10'>
               <Link to="/coming-soon">DVLP DNVR Lightning Talk</Link>
             </Menu.Item>
