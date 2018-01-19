@@ -9,11 +9,11 @@ import NotFound from './NotFound'
 
 class LeftMenu extends Component {
 
-
   constructor(props) {
     super(props)
 
-    this.state = { visible: true,
+    this.state = {
+    visible: true,
     videos: [{
       title: 'Intro to Sorting',
       id: 'yNiO2jivXsU'
@@ -43,7 +43,7 @@ class LeftMenu extends Component {
       id: 'ATXiCaa0R-c'
     }]
   }
-  }
+}
 
   toggleVisibility = () => this.setState({ visible: !this.state.visible })
 
