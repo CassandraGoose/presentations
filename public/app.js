@@ -19020,6 +19020,7 @@ var LeftMenu = function (_Component) {
     value: function render() {
       var visible = this.state.visible;
 
+
       return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["a" /* BrowserRouter */],
         null,

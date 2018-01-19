@@ -10,7 +10,7 @@ const MOUNT_NODE = document.getElementById('root')
 
 const App = () => (
   <div>
-  <LeftMenu/>
+    <LeftMenu/>
   </div>
 )
 

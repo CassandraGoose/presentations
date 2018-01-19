@@ -15,41 +15,42 @@ class LeftMenu extends Component {
     this.state = {
     visible: true,
     videos: [{
-      title: 'Intro to Sorting',
-      id: 'yNiO2jivXsU'
-    }, {
-      title: 'Intro to Express',
-      id: 'TAaadUhcnOg'
-    }, {
-      title: 'Accumulator Pattern Walkthrough',
-      id: 'jYDldOM4lhM'
-    }, {
-      title: 'Intro to Ajax Walkthrough',
-      id: 'xaOfeVVzPYY'
-    }, {
-      title: 'Intro to SQL',
-      id: 'GDg6alKEnw8'
-    }, {
-      title: 'Validations Breakout',
-      id: 'M5Np7xguHz4'
-    }, {
-      title: 'Intro to HTML Forms',
-      id: 'wQsYZyzkpLM'
-    },{
-      title: 'Overview of es2015',
-      id: '-qZumxVyKlU'
-    },{
-      title: 'DOM & jQuery Breakout',
-      id: 'ATXiCaa0R-c'
-    }]
+        title: 'Intro to Sorting',
+        id: 'yNiO2jivXsU'
+      }, {
+        title: 'Intro to Express',
+        id: 'TAaadUhcnOg'
+      }, {
+        title: 'Accumulator Pattern Walkthrough',
+        id: 'jYDldOM4lhM'
+      }, {
+        title: 'Intro to Ajax Walkthrough',
+        id: 'xaOfeVVzPYY'
+      }, {
+        title: 'Intro to SQL',
+        id: 'GDg6alKEnw8'
+      }, {
+        title: 'Validations Breakout',
+        id: 'M5Np7xguHz4'
+      }, {
+        title: 'Intro to HTML Forms',
+        id: 'wQsYZyzkpLM'
+      },{
+        title: 'Overview of es2015',
+        id: '-qZumxVyKlU'
+      },{
+        title: 'DOM & jQuery Breakout',
+        id: 'ATXiCaa0R-c'
+      }]
+    }
   }
-}
 
   toggleVisibility = () => this.setState({ visible: !this.state.visible })
 
   render() {
 
     const { visible } = this.state
+
     return (
       <BrowserRouter>
         <Sidebar.Pushable>
@@ -82,8 +83,5 @@ class LeftMenu extends Component {
     )
   }
 }
-
-
-
 
 export default LeftMenu
