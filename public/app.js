@@ -19031,13 +19031,12 @@ var LeftMenu = function (_Component) {
             __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react_dist_commonjs_modules_Sidebar_Sidebar___default.a,
             { as: __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a, animation: 'slide along', width: 'thin', visible: visible, icon: 'labeled', vertical: true, inverted: true },
             __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
-              { name: 'home' },
-              __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_elements_Icon_Icon___default.a, { name: 'home' }),
+              __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
+              { to: '/home' },
               __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
-                { to: '/home' },
-                'Home'
+                __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
+                { name: 'home' },
+                __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_semantic_ui_react_dist_commonjs_elements_Icon_Icon___default.a, { name: 'home' })
               )
             ),
             this.state.videos.map(function (item, i) {
