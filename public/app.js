@@ -19032,7 +19032,7 @@ var LeftMenu = function (_Component) {
             { as: __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a, animation: 'slide along', width: 'thin', visible: visible, icon: 'labeled', vertical: true, inverted: true },
             __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
               __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["b" /* Link */],
-              { to: '/home' },
+              { to: '/' },
               __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react_dist_commonjs_collections_Menu_Menu___default.a.Item,
                 { name: 'home' },
