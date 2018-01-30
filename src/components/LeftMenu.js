@@ -55,7 +55,7 @@ class LeftMenu extends Component {
       <BrowserRouter>
         <Sidebar.Pushable>
           <Sidebar as={Menu} animation='slide along' width='thin' visible={visible} icon='labeled' vertical inverted>
-            <Link to="/home"><Menu.Item name='home' >
+            <Link to="/"><Menu.Item name='home' >
             <Icon name="home"/>
              </Menu.Item></Link>
             {this.state.videos.map(function(item, i) {
