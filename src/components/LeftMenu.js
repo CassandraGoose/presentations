@@ -70,7 +70,7 @@ class LeftMenu extends Component {
           <Sidebar.Pusher>
             <Segment basic>
               <Switch>
-                <Route path="/home" component={Splash}/>
+                <Route exact path="/" component={Splash}/>
                 <Route path="/video/:id" component={VideoList}/>
                 <Route path="/coming-soon" component={ComingSoon}/>
                 <Route path='*' component={NotFound}/>

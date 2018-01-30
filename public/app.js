@@ -19069,7 +19069,7 @@ var LeftMenu = function (_Component) {
               __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_5_react_router_dom__["c" /* Switch */],
                 null,
-                __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_router_dom__["d" /* Route */], { path: '/home', component: __WEBPACK_IMPORTED_MODULE_7__Splash__["a" /* default */] }),
+                __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_router_dom__["d" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_7__Splash__["a" /* default */] }),
                 __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_router_dom__["d" /* Route */], { path: '/video/:id', component: __WEBPACK_IMPORTED_MODULE_6__VideoList__["a" /* default */] }),
                 __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_router_dom__["d" /* Route */], { path: '/coming-soon', component: __WEBPACK_IMPORTED_MODULE_8__ComingSoon__["a" /* default */] }),
                 __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_router_dom__["d" /* Route */], { path: '*', component: __WEBPACK_IMPORTED_MODULE_9__NotFound__["a" /* default */] })
